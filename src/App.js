@@ -1,22 +1,37 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+function Titles() {
+  return (
+    <div className="titles"> 
+      <p>
+        current layout
+      </p>
+      <p>
+        change up right here
+      </p>
+      <div>
+        <p>
+          change even furthur
+        </p>
+
+      </div>
+        
+    </div>
+  );
+}
+
 function App() {
   return (
     <div className="App">
+      <Titles />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          this is my resume
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
       </header>
     </div>
   );
