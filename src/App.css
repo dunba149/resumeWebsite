@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  width: 85vw;
+  width: 82vw;
   height: auto; 
   margin-left: auto; 
 
@@ -15,15 +15,20 @@
 }
 
 .myPicture {
-  padding: 20px; 
+  padding: 30px; 
+  background-color:#6b0000;
+  border-radius: 5px;  
+  margin-left: auto; 
   
   
 }
 
+
+
 .profile {
   width: 280px; 
   height: auto; 
-  padding: 20px; 
+  padding: 30px; 
 }
 .myDescription {
   display: flex;
@@ -34,7 +39,7 @@
 }
 .MyName {
   font-size:calc(10px + 8vmin) ; 
-  background-color: gold;
+  background-color: goldenrod;
 
 }
 
@@ -43,7 +48,7 @@
   min-height: 100vh;
   min-width: 15vw;
   display: table;
-  background-color: gold;
+  background-color: grey;
   color: rgb(0, 0, 0); 
   width: 250px; 
   padding: 20px; 
@@ -72,21 +77,21 @@
 .ResumeButton {
   font-style:normal;
   padding: 10px; 
-  background-color: gold;
+  background-color: goldenrod;
   cursor: pointer;
   border-radius: 8px;
   box-shadow: 0 4px 10px black;
 
 }
 .ResumeButton:hover{
-  background-color: goldenrod;
+  background-color: rgba(218, 165, 32, 0.603);
 }
-.WorkHistoryColumns{
+.Columns{
   display: grid; 
   grid-template-columns: repeat(2, 1fr);
   gap: 20px; 
   padding: 10px; 
-  width: 81.5vw; 
+  width: 80.5vw; 
   height: auto; 
   margin-left: auto; 
 
@@ -97,15 +102,17 @@
   display: flex; 
   padding: 5px; 
   color: black;
-  background-color: gold;
+  background-color: goldenrod;
+  border-radius: 8px;
+  box-shadow: 10px 5px 10px black;
   
 }
-.WorkHistoryTitle {
+.MainTitleOption {
   display: flex; 
   padding: 15px; 
   color: black; 
   text-align: Left; 
-  width: 81.25vw; 
+  width: 80.5vw; 
   margin-left: auto; 
   height: auto; 
   font-weight: 700;
@@ -133,6 +140,15 @@
   font-size: 15px;
   color: black; 
 }
+
+.borderOfButton {
+  padding: 20px; 
+}
+
+
+
+
+
 
 
 

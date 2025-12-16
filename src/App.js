@@ -1,10 +1,10 @@
 import './App.css';
-import profileImage from "./ProfilePicture.jpg"; 
+import profileImage from "./ProfilePicture.jpg";
 
 
 function Titles() {
   return (
-    <div className="titles"> 
+    <div className="titles">
       <p>
         About Me
       </p>
@@ -18,8 +18,8 @@ function Titles() {
         My Resume
       </p>
 
-      
-        
+
+
     </div>
   );
 }
@@ -27,25 +27,25 @@ function Titles() {
 function Introduction() {
   return (
     <div className="MyName">
-      
+
       Trey Dunbar
     </div>
   )
 }
 
 function MyDescription() {
-  return(
-    
+  return (
+
     <div className="myPicture">
-      
-      <div className= "myDescription">
-        
+
+      <div className="myDescription">
+
         <img src={profileImage} alt="profile" className="profile" />
-        
+
         <div>
           <p>
             I'm a Computer Science major at the University of Minnesota Duluth, pursuing a Math minor to deepen my analytical and quantitative skills. Alongside my CS coursework, I've completed Calculus I & II, Differential Equations, Linear Algebra, Statistics, and Intro to Statistical Computing, which sharpened my ability to reason through complex systems, analyze data, and apply mathematical models to real-world problems.
-          </p> 
+          </p>
           <p>
             On the CS side, I've already completed Software Engineering and Automata & Formal Languages, Software Analysis & Design, Computer Architecture, and Discrete Structures. These experiences have given me a strong foundation in both the theory of computation and the practical skills of building reliable software systems. Upcoming coursework in Security and Operating Systems will further expand my expertise.
           </p>
@@ -55,7 +55,7 @@ function MyDescription() {
           </p>
           <p>
             I'm seeking internship opportunities where I can contribute to real-world projects, learn from experienced developers, and grow as a software engineer. I bring curiosity, adaptability, and a strong work ethic to every challenge, with the added perspective of a solid math and statistics background that enhances my problem-solving and data-driven thinking.
-          </p>      
+          </p>
 
         </div>
       </div>
@@ -63,40 +63,59 @@ function MyDescription() {
   );
 }
 
-function WorkHistory () {
+function WorkHistory() {
   return (
-    
-   <div className='WorkHistoryColumns'>
-   
-   <div className='Section'>
-    <p className='Header'>
-      hello
-      <p className = 'Description'>
-        hello
-      </p>
-    </p>
+
+    <div className='Columns'>
+
+      <div className='Section'>
+        <p className='Header'>
+          hello
+          <p className='Description'>
+            hello
+          </p>
+        </p>
+      </div>
+      <div className='Section'>
+        <p className='Header'>
+          hello
+        </p>
+      </div>
+      <div className='Section'>
+        <p className='Header'>
+          hello
+        </p>
+      </div>
     </div>
-    <div className='Section'>
-    <p className='Header'>
-      hello
-    </p>
-    </div>
-    <div className='Section'>
-    <p className='Header'>
-      hello
-    </p>
-    </div>
-   </div>
   );
 }
 
-function AboutMe () {
-  return(<div className = "AboutMe">
+function AboutMe() {
+  return (<div className="AboutMe">
     <p>
-    About Me: 
+      About Me:
     </p>
 
   </div>);
+}
+
+function Projects() {
+  return (
+    <div className='Columns'>
+      <div className='Section'>
+
+      
+      <p>
+        Project1
+      </p>
+      </div>
+      <div className='Section'>
+      <p>
+        Project2
+      </p>
+      </div>
+      </div>
+  );
 }
 
 
@@ -107,23 +126,28 @@ function App() {
 
     <div className="app-layout">
       <Titles />
-    
+
       <div className="App">
-        <Introduction/>
-        <AboutMe/>
-        <MyDescription/>
-        <p className='WorkHistoryTitle'>
-    Work History: 
-    </p> 
-        <WorkHistory/>
+        <Introduction />
+        <AboutMe />
+        <MyDescription />
+        <p className='MainTitleOption'>
+          Work History:
+        </p>
+        <WorkHistory />
+        <p className='MainTitleOption'>
+          Projects:
+        </p>
+        <Projects/>
+        <div className = 'borderOfButton'>
         <button className="ResumeButton"
-        onClick={() => window.open( "https://drive.google.com/file/d/1PGdTQ20wvCBvQlYjCU4523KnN6_rI9wk/view?usp=sharing", "_blank")
-        
-        }
+          onClick={() => window.open("https://drive.google.com/file/d/1PGdTQ20wvCBvQlYjCU4523KnN6_rI9wk/view?usp=sharing", "_blank")
+
+          }
         >
-          See My Resume! yup
+          See My Resume!
         </button>
-        
+        </div>
       </div>
     </div>
   );
