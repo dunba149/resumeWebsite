@@ -1,8 +1,8 @@
 .App {
   text-align: center;
-  width: 82vw;
+  width: 85vw;
   height: auto; 
-  margin-left: auto; 
+  margin-left: 15vw; 
 
   
 }
@@ -12,6 +12,7 @@
   display: flex; 
   height: auto;
   background-color: #6b0000; 
+  width: auto; 
 }
 
 .myPicture {
@@ -45,8 +46,8 @@
 
 .titles {
   text-align: left;
-  min-height: 100vh;
-  min-width: 15vw;
+  height: 100vh;
+  width: 15vw;
   display: table;
   background-color: grey;
   color: rgb(0, 0, 0); 
@@ -68,7 +69,7 @@
   text-align: right;
   width: 81.5vw; 
   height: 1vh;
-  margin-left: auto; 
+  margin-left: 2vw; 
   font-weight: 700;
   color: white;
   
@@ -105,6 +106,8 @@
   background-color: goldenrod;
   border-radius: 8px;
   box-shadow: 10px 5px 10px black;
+  margin-left: 10px;
+  margin-right: 10px;
   
 }
 .MainTitleOption {
@@ -113,7 +116,7 @@
   color: black; 
   text-align: Left; 
   width: 80.5vw; 
-  margin-left: auto; 
+  margin-left: 2vw; 
   height: auto; 
   font-weight: 700;
   font-size: calc(10px + 2vmin);
