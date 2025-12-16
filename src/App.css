@@ -1,61 +1,31 @@
 .App {
   text-align: center;
-  width: 100vw;
+  width: 85vw;
+  margin-left: auto; 
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #6b0000;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .app-layout {
   display: flex; 
-  height: 100vh; 
+  height: 100vh;
+  background-color: #6b0000; 
 }
 
 .myPicture {
   padding: 20px; 
   
+  
 }
 
 .profile {
-  width: 200px; 
+  width: 280px; 
   height: auto; 
   padding: 20px; 
 }
 .myDescription {
   display: flex;
-  width: 84vw; 
+  width: auto; 
   color: white; 
   background-color: #6b0000;
   padding: 20px; 
@@ -67,14 +37,33 @@
 
 .titles {
   text-align: left;
-  min-height: 20vh;
-  min-width: fit-content;
+  min-height: 100vh;
+  min-width: 15vw;
   display: table;
   background-color: gold;
   color: rgb(0, 0, 0); 
   width: 250px; 
   padding: 20px; 
   border-right: 2px solid #555; 
+  position: fixed; 
+  
+}
+.Resume {
+  height: 100vh; 
+  width: 85vw; 
+  background-color: #6b0000;
+
+}
+.AboutMe {
+  font-size: calc(10px + 2vmin);
+  display: flex; 
+  text-align: right;
+  width: 81.5vw; 
+  height: 1vh;
+  margin-left: auto; 
+  font-weight: 700;
+  color: white;
+  
   
 }
 
