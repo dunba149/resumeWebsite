@@ -66,10 +66,27 @@ function MyDescription() {
 function WorkHistory () {
   return (
     
-    <div>
-      
-
+   <div className='WorkHistoryColumns'>
+   
+   <div className='Section'>
+    <p className='Header'>
+      hello
+      <p className = 'Description'>
+        hello
+      </p>
+    </p>
     </div>
+    <div className='Section'>
+    <p className='Header'>
+      hello
+    </p>
+    </div>
+    <div className='Section'>
+    <p className='Header'>
+      hello
+    </p>
+    </div>
+   </div>
   );
 }
 
@@ -95,11 +112,16 @@ function App() {
         <Introduction/>
         <AboutMe/>
         <MyDescription/>
+        <p className='WorkHistoryTitle'>
+    Work History: 
+    </p> 
         <WorkHistory/>
-        <button
-        onClick={() => window.open( "https://drive.google.com/file/d/1PGdTQ20wvCBvQlYjCU4523KnN6_rI9wk/view?usp=sharing", "_blank")}
+        <button className="ResumeButton"
+        onClick={() => window.open( "https://drive.google.com/file/d/1PGdTQ20wvCBvQlYjCU4523KnN6_rI9wk/view?usp=sharing", "_blank")
+        
+        }
         >
-          See My Resume!
+          See My Resume! yup
         </button>
         
       </div>
