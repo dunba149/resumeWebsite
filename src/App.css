@@ -1,48 +1,49 @@
 .App {
   text-align: center;
   width: calc(100vw - calc(20vmin));
-  height: auto; 
-  margin-left: calc(20vmin); 
+  height: auto;
+  margin-left: calc(20vmin);
 
-  
+
 }
 
 
 .app-layout {
-  display: flex; 
+  display: flex;
   height: auto;
-  background-color: #6b0000; 
-  width: auto; 
-  
+  background-color: #6b0000;
+  width: auto;
+
 }
 
 .myPicture {
-  padding: 30px; 
-  background-color:#6b0000;
-  border-radius: 5px;  
-  margin-left: calc(auto - 30px); 
-  width: auto; 
-  height: auto; 
-  
-  
+  padding: 30px;
+  background-color: #6b0000;
+  margin-left: calc(5vmin);
+  width: auto;
+  height: auto;
+
+
 }
 
 
 
 .profile {
-  width: 280px; 
-  height: auto; 
-  padding: 30px; 
+  width: 280px;
+  height: auto;
+  padding: 30px;
 }
+
 .myDescription {
   display: flex;
-  width: auto; 
-  color: white; 
+  width: auto;
+  color: white;
   background-color: #6b0000;
-  padding: 20px; 
+  padding: 20px;
 }
+
 .MyName {
-  font-size:calc(10px + 8vmin) ; 
+  font-size: calc(10px + 8vmin);
   background-color: goldenrod;
 
 }
@@ -53,107 +54,106 @@
   width: calc(20vmin);
   display: table;
   background-color: grey;
-  color: rgb(0, 0, 0); 
-  padding: 20px; 
-  border-right: 2px solid #555; 
-  position: fixed; 
-  
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  border-right: 2px solid #555;
+  position: fixed;
+
 }
+
 .Resume {
-  height: 100vh; 
-  width: 85vw; 
+  height: 100vh;
+  width: 85vw;
   background-color: #6b0000;
 
 }
+
 .AboutMe {
   font-size: calc(10px + 2vmin);
-  display: flex; 
+  display: flex;
   text-align: right;
-  width: 81.5vw; 
+  width: 81.5vw;
   height: 1vh;
-  margin-left: 2vw; 
+  margin-left: 2vw;
   font-weight: 700;
   color: white;
-  
-  
+
+
 }
+
 .ResumeButton {
-  font-style:normal;
-  padding: 10px; 
+  font-style: normal;
+  padding: 10px;
   background-color: goldenrod;
   cursor: pointer;
   border-radius: 8px;
   box-shadow: 0 4px 10px black;
 
 }
-.ResumeButton:hover{
+
+.ResumeButton:hover {
   background-color: rgba(218, 165, 32, 0.603);
 }
-.Columns{
-  display: grid; 
+
+.Columns {
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px; 
-  padding: 10px; 
-  width: 80.5vw; 
-  height: auto; 
-  margin-left: auto; 
+  gap: 2vw;
+  padding: 10px;
+  width: 80.5vw;
+  height: auto;
+  margin-left: auto;
 
 
 
 }
+
 .Section {
-  display: flex; 
-  padding: 5px; 
+  display: flex;
+  padding: 5px;
   color: black;
   background-color: goldenrod;
   border-radius: 8px;
-  box-shadow: 10px 5px 10px black;
-  margin-left: 10px;
-  margin-right: 10px;
-  
+  box-shadow: 1vw .5vw 1vw black;
+  margin-left: 1vw;
+  margin-right: 1vw;
+
 }
+
 .MainTitleOption {
-  display: flex; 
-  padding: 15px; 
-  color: black; 
-  text-align: Left; 
-  width: 80.5vw; 
-  margin-left: 2vw; 
-  height: auto; 
+  display: flex;
+  padding: 15px;
+  color: black;
+  text-align: Left;
+  width: calc(80vmin);
+  margin-left: 2vw;
+  height: auto;
   font-weight: 700;
   font-size: calc(10px + 2vmin);
-  color: white; 
+  color: white;
 
 }
 
-.Header{
-  display: flex; 
-  padding: 5px; 
-  color: black; 
-  text-align: Left; 
+.Header {
+  display: flex;
+  padding: 5px;
+  color: black;
+  text-align: Left;
   font-weight: 600;
   font-size: calc(10px + 1vmin);
-  color: black; 
+  color: black;
 }
 
 .Description {
-  display: flex; 
-  padding: 5px; 
-  color: black; 
-  text-align: Left; 
+  display: flex;
+  padding: 5px;
+  color: black;
+  text-align: Left;
   font-weight: 400;
   font-size: 15px;
-  color: black; 
+  color: black;
 }
 
 .borderOfButton {
-  padding: 20px; 
+  padding: 20px;
 }
-
-
-
-
-
-
-
-
