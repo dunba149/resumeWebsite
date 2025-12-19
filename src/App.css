@@ -123,7 +123,7 @@
   font-weight: 700;
   font-size: calc(10px + 2vmin);
   color: white;
-
+  margin-top: 30vh; 
 }
 
 .Header {
@@ -148,14 +148,29 @@
 
 .borderOfButton {
   padding: 20px;
+  margin-top: 30vh; 
+  margin-bottom: 5vh; 
 }
 
 .Box {
   display: flex;
   padding: 5px;
-  color: white;
-  background-color:#6b0000;
+  color: black;
+  background-color:goldenrod;
   margin-left: 1vw;
   margin-right: 1vw;
 
+}
+
+.AboutMe {
+  display: flex;
+  padding: 15px;
+  color: black;
+  text-align: Left;
+  width: calc(80vmin);
+  margin-left: 2vw;
+  height: auto;
+  font-weight: 700;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }

@@ -113,18 +113,13 @@ function Projects() {
 
 function Skills() {
   return (
-    <div className='Columns'>
+    <div className='Columns' style = {{backgroundColor: 'goldenrod', borderRadius: '8px', boxShadow: '1vw .5vw 1vw black', marginRight: '1.5vw', padding: '0px'}}>
       <div className='Box'>
-        <p>
-          first skill
-        </p>
+        <ul>
+          <li>first skill</li>
+          <li>second SKill</li>
+        </ul>
       </div>
-      <div className='Box'>
-        <p>
-          first skill
-        </p>
-      </div>
-
       <div className='Box'>
         <p>
           first skill
@@ -146,7 +141,7 @@ function App() {
 
       <div className="App">
         <Introduction />
-        <p className="MainTitleOption">
+        <p className="AboutMe">
           About Me:
         </p>
         <MyDescription />
@@ -158,10 +153,14 @@ function App() {
           Projects:
         </p>
         <Projects />
+        <p className = "MainTitleOption">
+          Skills: 
+        </p>
         <Skills />
         <div className='borderOfButton'>
           <button className="ResumeButton"
             onClick={() => window.open("https://drive.google.com/file/d/1PGdTQ20wvCBvQlYjCU4523KnN6_rI9wk/view?usp=sharing", "_blank")
+              
 
             }
           >
