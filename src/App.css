@@ -17,7 +17,6 @@
 }
 
 .myPicture {
-  padding: 30px;
   background-color: #6b0000;
   margin-left: calc(5vmin);
   width: auto;
@@ -30,8 +29,9 @@
 
 .profile {
   width: 280px;
-  height: auto;
+  height: 280px;
   padding: 30px;
+  margin-top: calc(2.5vh);
 }
 
 .myDescription {
@@ -39,7 +39,11 @@
   width: auto;
   color: white;
   background-color: #6b0000;
-  padding: 20px;
+}
+.TheDescription {
+  diplay: flex; 
+  width: auto; 
+  padding: 20px; 
 }
 
 .MyName {
@@ -68,18 +72,6 @@
 
 }
 
-.AboutMe {
-  font-size: calc(10px + 2vmin);
-  display: flex;
-  text-align: right;
-  width: 81.5vw;
-  height: 1vh;
-  margin-left: 2vw;
-  font-weight: 700;
-  color: white;
-
-
-}
 
 .ResumeButton {
   font-style: normal;
@@ -156,4 +148,14 @@
 
 .borderOfButton {
   padding: 20px;
+}
+
+.Box {
+  display: flex;
+  padding: 5px;
+  color: white;
+  background-color:#6b0000;
+  margin-left: 1vw;
+  margin-right: 1vw;
+
 }

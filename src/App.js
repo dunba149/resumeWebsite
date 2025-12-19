@@ -42,7 +42,7 @@ function MyDescription() {
 
         <img src={profileImage} alt="profile" className="profile" />
 
-        <div>
+        <div className="TheDescription">
           <p>
             I'm a Computer Science major at the University of Minnesota Duluth, pursuing a Math minor to deepen my analytical and quantitative skills. Alongside my CS coursework, I've completed Calculus I & II, Differential Equations, Linear Algebra, Statistics, and Intro to Statistical Computing, which sharpened my ability to reason through complex systems, analyze data, and apply mathematical models to real-world problems.
           </p>
@@ -90,35 +90,52 @@ function WorkHistory() {
   );
 }
 
-function AboutMe() {
-  return (<div className="AboutMe">
-    <p>
-      About Me:
-    </p>
 
-  </div>);
-}
 
 function Projects() {
   return (
     <div className='Columns'>
       <div className='Section'>
 
-      
-      <p>
-        Project1
-      </p>
+
+        <p>
+          Project1
+        </p>
       </div>
       <div className='Section'>
-      <p>
-        Project2
-      </p>
+        <p>
+          Project2
+        </p>
       </div>
-      </div>
+    </div>
   );
 }
 
+function Skills() {
+  return (
+    <div className='Columns'>
+      <div className='Box'>
+        <p>
+          first skill
+        </p>
+      </div>
+      <div className='Box'>
+        <p>
+          first skill
+        </p>
+      </div>
 
+      <div className='Box'>
+        <p>
+          first skill
+        </p>
+      </div>
+
+
+
+    </div>
+  );
+}
 
 
 function App() {
@@ -129,7 +146,9 @@ function App() {
 
       <div className="App">
         <Introduction />
-        <AboutMe />
+        <p className="MainTitleOption">
+          About Me:
+        </p>
         <MyDescription />
         <p className='MainTitleOption'>
           Work History:
@@ -138,15 +157,16 @@ function App() {
         <p className='MainTitleOption'>
           Projects:
         </p>
-        <Projects/>
-        <div className = 'borderOfButton'>
-        <button className="ResumeButton"
-          onClick={() => window.open("https://drive.google.com/file/d/1PGdTQ20wvCBvQlYjCU4523KnN6_rI9wk/view?usp=sharing", "_blank")
+        <Projects />
+        <Skills />
+        <div className='borderOfButton'>
+          <button className="ResumeButton"
+            onClick={() => window.open("https://drive.google.com/file/d/1PGdTQ20wvCBvQlYjCU4523KnN6_rI9wk/view?usp=sharing", "_blank")
 
-          }
-        >
-          See My Resume!
-        </button>
+            }
+          >
+            See My Resume!
+          </button>
         </div>
       </div>
     </div>
