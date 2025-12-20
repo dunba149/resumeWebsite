@@ -5,18 +5,83 @@ import profileImage from "./ProfilePicture.jpg";
 function Titles() {
   return (
     <div className="titles">
-      <p>
+      <div>
+
+      
+      <button className='SidebarButton' 
+      onClick={() => {(
+        document.getElementById("Intro").scrollIntoView({
+          behavior: 'smooth', 
+          block: 'start', 
+        })
+      )}}
+      
+      >
+        <p>
         About Me
-      </p>
-      <p>
-        change up right here
-      </p>
-      <p>
+        </p>
+      </button>
+      </div>
+      <div>
+      <button className='SidebarButton' 
+      onClick={() => {(
+        document.getElementById("workHistory").scrollIntoView({
+          behavior: 'smooth', 
+          block: 'start', 
+        })
+      )}}
+      
+      >
+        <p>
         Work History
-      </p>
-      <p>
+        </p>
+      </button>
+      </div>
+      <div>
+      <button className='SidebarButton' 
+      onClick={() => {(
+        document.getElementById("Projects").scrollIntoView({
+          behavior: 'smooth', 
+          block: 'start', 
+        })
+      )}}
+      
+      >
+        <p>
+        Projects
+        </p>
+      </button>
+      </div>
+      <div>
+      <button className='SidebarButton' 
+      onClick={() => {(
+        document.getElementById("Skills").scrollIntoView({
+          behavior: 'smooth', 
+          block: 'start', 
+        })
+      )}}
+      
+      >
+        <p>
+        Skills
+        </p>
+      </button>
+      </div>
+      <div>
+      <button className='SidebarButton' 
+      onClick={() => {(
+        document.getElementById("Resume").scrollIntoView({
+          behavior: 'smooth', 
+          block: 'start', 
+        })
+      )}}
+      
+      >
+        <p>
         My Resume
-      </p>
+        </p>
+      </button>
+      </div>
 
 
 
@@ -113,21 +178,31 @@ function Projects() {
 
 function Skills() {
   return (
-    <div className='Columns' style = {{backgroundColor: 'goldenrod', borderRadius: '8px', boxShadow: '1vw .5vw 1vw black', marginRight: '1.5vw', padding: '0px'}}>
-      <div className='Box'>
-        <ul>
-          <li>first skill</li>
-          <li>second SKill</li>
-        </ul>
+    <div className='tag-list'>
+
+
+      <div className='inner'>
+
+        <div className='tag'>Java</div>
+        <div className='tag'>C++</div>
+        <div className='tag'>Python</div>
+        <div className='tag'>Dart</div>
+        <div className='tag'>Flutter</div>
+        <div className='tag'>CSS</div>
+        <div className='tag'>JS</div>
+        <div className='tag'>HTML</div>
+        <div className='tag'>Git</div>
+        <div className='tag'>GitHub</div>
+        <div className='tag'>Firebase</div>
+        <div className='tag'>Automata theory</div>
+        <div className='tag'>Formal Languages</div>
+        <div className='tag'>Computational Models</div>
+        <div className='tag'>Software Design</div>
+        <div className='tag'>Strong Communication</div>
+        <div className='tag'>Collaboration</div>
+        <div className='tag'>Analytical Thinker</div>
+
       </div>
-      <div className='Box'>
-        <p>
-          first skill
-        </p>
-      </div>
-
-
-
     </div>
   );
 }
@@ -141,32 +216,42 @@ function App() {
 
       <div className="App">
         <Introduction />
-        <p className="AboutMe">
-          About Me:
-        </p>
-        <MyDescription />
-        <p className='MainTitleOption'>
-          Work History:
-        </p>
-        <WorkHistory />
-        <p className='MainTitleOption'>
-          Projects:
-        </p>
-        <Projects />
-        <p className = "MainTitleOption">
-          Skills: 
-        </p>
-        <Skills />
-        <div className='borderOfButton'>
-          <button className="ResumeButton"
-            onClick={() => window.open("https://drive.google.com/file/d/1PGdTQ20wvCBvQlYjCU4523KnN6_rI9wk/view?usp=sharing", "_blank")
-              
+        <section id='Intro'>
+          <p className="AboutMe">
+            About Me:
+          </p>
+          <MyDescription />
+        </section>
+        <section id='workHistory'>
+          <p className='MainTitleOption'>
+            Work History:
+          </p>
+          <WorkHistory />
+        </section>
+        <section id='Projects'>
+          <p className='MainTitleOption'>
+            Projects:
+          </p>
+          <Projects />
+        </section>
+        <section id='Skills'>
+          <p className="MainTitleOption">
+            Skills:
+          </p>
+          <Skills />
+        </section>
+        <section id='Resume'>
+          <div className='borderOfButton'>
+            <button className="ResumeButton"
+              onClick={() => window.open("https://drive.google.com/file/d/1PGdTQ20wvCBvQlYjCU4523KnN6_rI9wk/view?usp=sharing", "_blank")
 
-            }
-          >
-            See My Resume!
-          </button>
-        </div>
+
+              }
+            >
+              See My Resume!
+            </button>
+          </div>
+        </section>
       </div>
     </div>
   );

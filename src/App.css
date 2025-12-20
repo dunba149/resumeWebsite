@@ -1,9 +1,9 @@
 .App {
   text-align: center;
-  width: calc(100vw - calc(20vmin));
-  height: auto;
-  margin-left: calc(20vmin);
 
+  height: auto;
+  margin-left: calc(15vmin);
+  width: stretch; 
 
 }
 
@@ -41,7 +41,7 @@
   background-color: #6b0000;
 }
 .TheDescription {
-  diplay: flex; 
+  display: flex; 
   width: auto; 
   padding: 20px; 
 }
@@ -49,21 +49,39 @@
 .MyName {
   font-size: calc(10px + 8vmin);
   background-color: goldenrod;
+  width: stretch; 
+  
 
 }
 
 .titles {
   text-align: left;
   height: 100vh;
-  width: calc(20vmin);
+  width: calc(15vmin);
   display: table;
   background-color: grey;
   color: rgb(0, 0, 0);
   padding: 20px;
   border-right: 2px solid #555;
   position: fixed;
+   
+
 
 }
+.SidebarButton {
+  background-color: grey;
+  color: black; 
+  height: auto; 
+  width: stretch; 
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  outline: none; 
+  border: none; 
+  box-shadow: none; 
+  
+  
+}
+
 
 .Resume {
   height: 100vh;
@@ -152,14 +170,61 @@
   margin-bottom: 5vh; 
 }
 
-.Box {
-  display: flex;
-  padding: 5px;
-  color: black;
-  background-color:goldenrod;
-  margin-left: 1vw;
-  margin-right: 1vw;
+.tag-list {
+  width: auto; 
+  font-family: "Montserrat"; 
+  position: relative; 
+  overflow: hidden; 
+  margin-left: 12vw;
+  margin-right: 8vw; 
+  height: 10vh; 
 
+}
+
+.inner{
+  width: fit-content;
+  height: 10vh;
+  display: flex; 
+  gap: 1rem; 
+  animation: loop 15s linear infinite alternate; 
+
+}
+
+.tag{
+  display: flex; 
+  align-items: center;
+  gap: 0 0.2rem; 
+  color: black; 
+  font-size: .9rem;
+  background-color: goldenrod;
+  padding: .7rem 1rem; 
+  border-radius: 0.4rem;
+  box-shadow: 
+    0 0.1rem 0.2rem black,
+    0 0.1rem 0.3rem black,
+    0 0.2rem 0.5rem black;
+
+}
+
+
+
+
+
+@keyframes loop {
+  0%,
+  13% {
+    transform: translateX(0); 
+  }
+  50% {
+    transform: translateX(-25%); 
+  }
+  65%, 
+  75% {
+    transform: translateX(-25%); 
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .AboutMe {
