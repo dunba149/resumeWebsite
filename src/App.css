@@ -41,7 +41,7 @@
   background-color: #6b0000;
 }
 .TheDescription {
-  diplay: flex; 
+  display: flex; 
   width: auto; 
   padding: 20px; 
 }
@@ -152,14 +152,61 @@
   margin-bottom: 5vh; 
 }
 
-.Box {
-  display: flex;
-  padding: 5px;
-  color: black;
-  background-color:goldenrod;
-  margin-left: 1vw;
-  margin-right: 1vw;
+.tag-list {
+  width: auto; 
+  font-family: "Montserrat"; 
+  position: relative; 
+  overflow: hidden; 
+  margin-left: 12vw;
+  margin-right: 8vw; 
+  height: 10vh; 
 
+}
+
+.inner{
+  width: fit-content;
+  height: 10vh;
+  display: flex; 
+  gap: 1rem; 
+  animation: loop 15s linear infinite alternate; 
+
+}
+
+.tag{
+  display: flex; 
+  align-items: center;
+  gap: 0 0.2rem; 
+  color: black; 
+  font-size: .9rem;
+  background-color: goldenrod;
+  padding: .7rem 1rem; 
+  border-radius: 0.4rem;
+  box-shadow: 
+    0 0.1rem 0.2rem black,
+    0 0.1rem 0.3rem black,
+    0 0.2rem 0.5rem black;
+
+}
+
+
+
+
+
+@keyframes loop {
+  0%,
+  13% {
+    transform: translateX(0); 
+  }
+  50% {
+    transform: translateX(-25%); 
+  }
+  65%, 
+  75% {
+    transform: translateX(-25%); 
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .AboutMe {

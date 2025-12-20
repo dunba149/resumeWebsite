@@ -113,21 +113,31 @@ function Projects() {
 
 function Skills() {
   return (
-    <div className='Columns' style = {{backgroundColor: 'goldenrod', borderRadius: '8px', boxShadow: '1vw .5vw 1vw black', marginRight: '1.5vw', padding: '0px'}}>
-      <div className='Box'>
-        <ul>
-          <li>first skill</li>
-          <li>second SKill</li>
-        </ul>
-      </div>
-      <div className='Box'>
-        <p>
-          first skill
-        </p>
-      </div>
+    <div className = 'tag-list'>
 
+   
+      <div className='inner'>
+        
+        <div className='tag'>Java</div>
+        <div className='tag'>C++</div>
+        <div className='tag'>Python</div>
+        <div className='tag'>Dart</div>
+        <div className='tag'>Flutter</div>
+        <div className='tag'>CSS</div>
+        <div className='tag'>JS</div>
+        <div className='tag'>HTML</div>
+        <div className='tag'>Git</div>
+        <div className='tag'>GitHub</div>
+        <div className='tag'>Firebase</div>
+        <div className='tag'>Automata theory</div>
+        <div className='tag'>Formal Languages</div>
+        <div className='tag'>Computational Models</div>
+        <div className='tag'>Software Design</div>
+        <div className='tag'>Strong Communication</div>
+        <div className='tag'>Collaboration</div>
+        <div className='tag'>Analytical Thinker</div>
 
-
+      </div> 
     </div>
   );
 }
