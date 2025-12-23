@@ -7,80 +7,90 @@ function Titles() {
     <div className="titles">
       <div>
 
-      
-      <button className='SidebarButton' 
-      onClick={() => {(
-        document.getElementById("Intro").scrollIntoView({
-          behavior: 'smooth', 
-          block: 'start', 
-        })
-      )}}
-      
-      >
-        <p>
-        About Me
-        </p>
-      </button>
+
+        <button className='SidebarButton'
+          onClick={() => {
+            (
+              document.getElementById("Intro").scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+              })
+            )
+          }}
+
+        >
+          <p>
+            About Me
+          </p>
+        </button>
       </div>
       <div>
-      <button className='SidebarButton' 
-      onClick={() => {(
-        document.getElementById("workHistory").scrollIntoView({
-          behavior: 'smooth', 
-          block: 'start', 
-        })
-      )}}
-      
-      >
-        <p>
-        Work History
-        </p>
-      </button>
+        <button className='SidebarButton'
+          onClick={() => {
+            (
+              document.getElementById("workHistory").scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+              })
+            )
+          }}
+
+        >
+          <p>
+            Work History
+          </p>
+        </button>
       </div>
       <div>
-      <button className='SidebarButton' 
-      onClick={() => {(
-        document.getElementById("Projects").scrollIntoView({
-          behavior: 'smooth', 
-          block: 'start', 
-        })
-      )}}
-      
-      >
-        <p>
-        Projects
-        </p>
-      </button>
+        <button className='SidebarButton'
+          onClick={() => {
+            (
+              document.getElementById("Projects").scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+              })
+            )
+          }}
+
+        >
+          <p>
+            Projects
+          </p>
+        </button>
       </div>
       <div>
-      <button className='SidebarButton' 
-      onClick={() => {(
-        document.getElementById("Skills").scrollIntoView({
-          behavior: 'smooth', 
-          block: 'start', 
-        })
-      )}}
-      
-      >
-        <p>
-        Skills
-        </p>
-      </button>
+        <button className='SidebarButton'
+          onClick={() => {
+            (
+              document.getElementById("Skills").scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+              })
+            )
+          }}
+
+        >
+          <p>
+            Skills
+          </p>
+        </button>
       </div>
       <div>
-      <button className='SidebarButton' 
-      onClick={() => {(
-        document.getElementById("Resume").scrollIntoView({
-          behavior: 'smooth', 
-          block: 'start', 
-        })
-      )}}
-      
-      >
-        <p>
-        My Resume
-        </p>
-      </button>
+        <button className='SidebarButton'
+          onClick={() => {
+            (
+              document.getElementById("Resume").scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+              })
+            )
+          }}
+
+        >
+          <p>
+            My Resume
+          </p>
+        </button>
       </div>
 
 
@@ -108,6 +118,7 @@ function MyDescription() {
         <img src={profileImage} alt="profile" className="profile" />
 
         <div className="TheDescription">
+          <ul> 
           <p>
             I'm a Computer Science major at the University of Minnesota Duluth, pursuing a Math minor to deepen my analytical and quantitative skills. Alongside my CS coursework, I've completed Calculus I & II, Differential Equations, Linear Algebra, Statistics, and Intro to Statistical Computing, which sharpened my ability to reason through complex systems, analyze data, and apply mathematical models to real-world problems.
           </p>
@@ -121,24 +132,44 @@ function MyDescription() {
           <p>
             I'm seeking internship opportunities where I can contribute to real-world projects, learn from experienced developers, and grow as a software engineer. I bring curiosity, adaptability, and a strong work ethic to every challenge, with the added perspective of a solid math and statistics background that enhances my problem-solving and data-driven thinking.
           </p>
-
+        </ul>
         </div>
       </div>
     </div>
   );
 }
 
-function WorkHistory() {
+function WorkHistory(list) {
   return (
 
     <div className='Columns'>
 
       <div className='Section'>
         <p className='Header'>
-          hello
-          <p className='Description'>
-            hello
-          </p>
+          header
+          <ul>
+            <li>
+              <p className='Description'>
+                hello
+              </p>
+            </li>
+            <li>
+              <p className='Description'>
+                hello
+              </p>
+            </li>
+            <li>
+              <p className='Description'>
+                hello
+              </p>
+            </li>
+            <li>
+              <p className='Description'>
+                hello
+              </p>
+            </li>
+
+          </ul>
         </p>
       </div>
       <div className='Section'>
@@ -209,7 +240,9 @@ function Skills() {
 
 
 function App() {
+  const job1 = ["HelloTitle", "helloWorld", "hello"]
   return (
+
 
     <div className="app-layout">
       <Titles />

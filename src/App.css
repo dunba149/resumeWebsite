@@ -44,6 +44,8 @@
   display: flex; 
   width: auto; 
   padding: 20px; 
+ 
+
 }
 
 .MyName {
@@ -162,7 +164,10 @@
   font-weight: 400;
   font-size: 15px;
   color: black;
+  width: 500px; 
+
 }
+
 
 .borderOfButton {
   padding: 20px;
@@ -238,4 +243,21 @@
   font-weight: 700;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.left {
+   
+  padding: 10px; 
+  background-color: grey; 
+  color: black; 
+  
+
+}
+.right {
+   
+  padding: 10px; 
+  background-color: grey; 
+  color: black; 
+  
+
 }
