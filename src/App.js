@@ -118,21 +118,27 @@ function MyDescription() {
         <img src={profileImage} alt="profile" className="profile" />
 
         <div className="TheDescription">
-          <ul> 
-          <p>
+          <button className='button' id='leftButton'>
+            ←
+          </button>
+           <div className='currSection'>
+          <p className = 'sectionOfDescription'>
             I'm a Computer Science major at the University of Minnesota Duluth, pursuing a Math minor to deepen my analytical and quantitative skills. Alongside my CS coursework, I've completed Calculus I & II, Differential Equations, Linear Algebra, Statistics, and Intro to Statistical Computing, which sharpened my ability to reason through complex systems, analyze data, and apply mathematical models to real-world problems.
           </p>
-          <p>
+          <p className = 'sectionOfDescription'>
             On the CS side, I've already completed Software Engineering and Automata & Formal Languages, Software Analysis & Design, Computer Architecture, and Discrete Structures. These experiences have given me a strong foundation in both the theory of computation and the practical skills of building reliable software systems. Upcoming coursework in Security and Operating Systems will further expand my expertise.
           </p>
-          <p>
+          <p className = 'sectionOfDescription'>
             I've applied this knowledge in hands-on projects such as Game Board Nexus, a mobile app connecting board game enthusiasts, and a Tabletop Game Tracker web app with Firebase integration. I'm proficient in C++, Java, Python, and Dart/Flutter, with growing experience in HTML, CSS, and JavaScript, and I'm comfortable using Git/GitHub for version control. Tutoring computer science for two semesters has also strengthened my ability to explain complex concepts clearly, reinforcing both my technical depth and communication skills.
 
           </p>
-          <p>
+          <p className = 'sectionOfDescription'>
             I'm seeking internship opportunities where I can contribute to real-world projects, learn from experienced developers, and grow as a software engineer. I bring curiosity, adaptability, and a strong work ethic to every challenge, with the added perspective of a solid math and statistics background that enhances my problem-solving and data-driven thinking.
           </p>
-        </ul>
+        </div>
+        <button className='button' id='rightButton'>
+            →
+          </button>
         </div>
       </div>
     </div>
@@ -170,6 +176,7 @@ function WorkHistory(list) {
             </li>
 
           </ul>
+
         </p>
       </div>
       <div className='Section'>
