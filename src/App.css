@@ -48,18 +48,37 @@
 
 }
 .currSection{
-  width: stretch; 
+  width: 60vw; 
+  display: flex; 
   background-color: goldenrod;
   border-radius: 10px;
   padding: 20px; 
   overflow: hidden; 
+  flex-direction: row;
+  height: 60vh; 
+  white-space: normal;
 }
 .sectionOfDescription{
-  width: stretch; 
+  min-width: 60vw; 
+  display: none; 
   color: black; 
+  height: stretch;
+  padding: 10px;  
+  opacity: 0; 
+  pointer-events: none; 
+  transition: opacity 0.3s ease; 
   
 
 }
+.sectionOfDescription.active {
+  opacity: 1; 
+  pointer-events: auto; 
+  display: block; 
+}
+.sectionOfDescription p{
+  font-size: calc(10px + 2vmin);
+}
+
 .button{
   height: 4vh; 
   width: auto; 
